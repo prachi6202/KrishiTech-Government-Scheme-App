@@ -280,6 +280,11 @@ pre {
 	color:#a09d99;
 	line-height:27px
 }
+
+ul.ex1 {
+margin-left: 30px;
+}
+
 /* footer */
 footer {
 	padding:0 0 40px 23px

@@ -1,42 +1,35 @@
+{% extends "firstapp/base.html"  %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<title>KT schemes</title>
-<meta charset="utf-8">
-<link rel="stylesheet" href="{% static 'css/reset.css' %}" type="text/css" media="all">
-<link rel="stylesheet" href="{% static 'css/layout.css' %}" type="text/css" media="all">
-<link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
-<script type="text/javascript" src="{% static 'js/jquery-1.6.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/jquery.easing.1.3.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/tms-0.3.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/tms_presets.js' %}"></script>
-<script type="text/javascript" src="{% static 'js/script.js' %}"></script>
-<!--[if lt IE 9]>
-<script type="text/javascript" src="js/html5.js"></script>
-<style type="text/css">#menu a, .bg, .bg2, #ContactForm a {behavior:url("../js/PIE.htc")}</style>
-<![endif]-->
-</head>
-<body id="page1">
+{% block content %}
+<body id="page1"  data-spy="scroll" data-target=".navbar" data-offset="50">
 <div class="body1">
   <div class="main">
     <!--header -->
     <header>
       <div class="wrapper">
-        <!-- <h1><a href="{% static 'index.html' %}" id="logo">Agrox Agriculture Company</a></h1> -->
-        <h1><img src="{% static 'images/logomain.png' %}" alt=""></h1>
+
+
         <nav>
-          <ul id="menu">
-            <p><b>KrishiTech</b> : Adding Green to your Life.</p>
-          </ul>
-        </nav>
+
+            <!-- <button onclick="goBack()">Go Back</button> -->
+            <center>
+              <p></p>
+            <h2 id="navhed"class="navbar-brand brand-name">
+
+              <a class="navbar-brand" href="#"><img src="{% static "images/logomain.png"%}" width="250" ></a>
+
+           </h2>
+           </center>
+          </nav>
+
+
       </div>
       <div class="slider_bg">
         <div class="slider">
           <ul class="items">
-            <li><img src="{% static 'images/slider1.png' %}" alt=""></li>
-            <li><img src="{% static 'images/slider2.png' %}" alt=""></li>
-            <li><img src="{% static 'images/slider3.png' %}" alt=""></li>
+            <li><img src="{% static 'images/s1.png' %}" alt=""></li>
+            <li><img src="{% static 'images/2.png' %}" alt=""></li>
+            <li><img src="{% static 'images/3.png' %}" alt=""></li>
           </ul>
         </div>
       </div>
@@ -213,14 +206,14 @@
                       <li>Second Component  -- > <a href="http://agricoop.nic.in/sites/default/files/RE-BE.pdf">  Read</a> </li>
                       <li>Operational Guidelines on SMSP Under NMAET  -- > <a href="http://agricoop.nic.in/sites/default/files/SMSP13.05.2014.pdf">  Read</a>  </li>
                       <li>Component details of the Central Sector Scheme Development and Strengthening of Infrastructure facilities for production and Distribution of Quality Seeds  -- > <a href="http://agricoop.nic.in/sites/default/files/20-9-2019-scheme-updation.pdf">  Read</a>  </li>
-                      <li>Component details of the Central Sector Scheme ‘Development and Strengthening of Infrastructure Facilities for Production and Distribution of Quality Seeds  -- > <a href="https://seednet.gov.in/Material/Prog-Schemes.htm">  Visit</a>  </li>
+                      <li>Component details of the Central Sector Scheme â€˜Development and Strengthening of Infrastructure Facilities for Production and Distribution of Quality Seeds  -- > <a href="https://seednet.gov.in/Material/Prog-Schemes.htm">  Visit</a>  </li>
                     </ul>
       </div>
 
       <div id="b2">
               <h3>	Policy</h3>
                   <ul id="icons">
-                    <li>Policy and Management in Agriculture “State of the Indian Farmer-A Millennium Study”  -- > <a href="#">Visit</a> </li>
+                    <li>Policy and Management in Agriculture â€œState of the Indian Farmer-A Millennium Studyâ€  -- > <a href="#">Visit</a> </li>
                   </ul>
       </div>
 
@@ -251,7 +244,7 @@
               <h3>Other Schemes :</h3>
               <ul id="icons">
                 <li class="other"><b>Rainfed Farming System</b></li><br>
-                    <ul class="ex1">
+                    <ul style="list-style-type:disc" class="ex1">
                         <li>    Operational Guidelines of National Mission for Sustainable Agriculture(NMSA) for XII Plan Perioda -- > <a href="http://agricoop.nic.in/sites/default/files/Final_guidelines_0.pdf">  Read</a></li>
                         <li>    National Watershed Development Project for Rainfed Areas (NWDPRA) -- > <a href="http://agricoop.nic.in/sites/default/files/NMSA5913.pdf">  Read</a></li>
                         <li>    Rainfed Area Development Programme (RADP) -- ><a href="http://agricoop.nic.in/sites/default/files/RADP5913.pdf">  Read</a></li>
@@ -265,7 +258,7 @@
                     </ul>
 
                 <li class="other"><b>Natural Resource Management</b></li><br>
-                    <ul class="ex1">
+                    <ul style="list-style-type:disc" class="ex1">
                       <li>National Bamboo Mission -- ><a href="https://www.nbm.nic.in/">  Visit</a> </li>
                       <li>Annual Allocation (2019-20) -- ><a href="http://agricoop.nic.in/sites/default/files/AllocationSMAF_201920.pdf">  Read</a> </li>
                       <li>National Agroforestry Policy 2014 -- ><a href="http://agricoop.nic.in/sites/default/files/National%20Agroforestry%20Policy%202014.pdf">  Read</a></li>
@@ -275,7 +268,7 @@
                     </ul>
 
                 <li class="other"><b>Integrated Nutrient Management</b> </li><br>
-                    <ul class="ex1">
+                    <ul style="list-style-type:disc" class="ex1">
                         <li>Mission Organic Value Chain Development for North Eastern Region progress report reg -- ><a href="http://agricoop.nic.in/sites/default/files/Department%20Website%20I.pdf">  Read</a></li>
                         <li>Request to depute officer deals with organic manures, biofertilizers and other organic materials in the weekly video conference held every Friday with detailed information. -- ><a href="http://agricoop.nic.in/sites/default/files/departmental%20website%20II.pdf">  Read</a></li>
                         <li>Soil Health Management(SHM) Under National Mission for Sustainable Agriculture(NMSA)(W.E.F,1st April 2014)</li>
@@ -291,7 +284,7 @@
 
 
               <li class="other"> <b>Rashtriya Krishi Vikas Yojana</b> </li><br>
-                <ul class="ex1">
+                <ul style="list-style-type:disc" class="ex1">
                     <li>Revised Guidelines RKVY 2014 -- ><a href="http://agricoop.nic.in/sites/default/files/RKVY_Guildlines_%28XII_Plan%29-2014.pdf">  Read</a></li><br>
                     <br>
                 </ul>
@@ -299,16 +292,16 @@
         </div>
 
 
-      <section class="col2">
-        <div class="wrapper">
-            <div id="footer_link">Thankyou for Visiting !!  <br><a href="https://github.com/prachi6202">Contribute</a></div>
-        </div>
-      </section>
+        <section class="col2">
+          <div class="wrapper">
+            <div id="footer_link">Thankyou for Visiting !!   <button onclick="goBack()">Go Back</button> <br></div>
+          </div>
+          </section>
     </div>
     <!-- {%FOOTER_LINK} -->
   </footer>
   <!-- / footer -->
-
 </div>
 </body>
-</html>
+
+{% endblock %}
